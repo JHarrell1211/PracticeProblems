@@ -71,30 +71,30 @@ namespace PracticeProblems
             //Console.WriteLine("How much money did Norachai have before buying the salad? " + (x + y) + " dollars");
 
             //Homework 1/18/18
-            double valueOne = 7;
-            double valueTwo = 2;
-            string name;
+            //double valueOne = 7;
+            //double valueTwo = 2;
+            //string name;
 
-            Console.WriteLine("What name are we using? ");
-            name = Console.ReadLine();
-            Console.WriteLine(name.ToUpper() + " needs " + (valueOne - valueTwo) + " more cups of sugar. \n");
+            //Console.WriteLine("What name are we using? ");
+            //name = Console.ReadLine();
+            //Console.WriteLine(name.ToUpper() + " needs " + (valueOne - valueTwo) + " more cups of sugar. \n");
 
-            
-            valueOne = 13;
-            valueTwo = 4;
 
-            double total = (valueOne * valueTwo);
-            Console.WriteLine("What are Mike's three friends' names? ");
-            name = Console.ReadLine();
-            Console.WriteLine("The total bill for Mike, {0} is {1} dollars.\n", name, total );
+            //valueOne = 13;
+            //valueTwo = 4;
 
-            valueOne = 40;
-            valueTwo = 8;
-            total = valueOne / valueTwo;
+            //double total = (valueOne * valueTwo);
+            //Console.WriteLine("What are Mike's three friends' names? ");
+            //name = Console.ReadLine();
+            //Console.WriteLine("The total bill for Mike, {0} is {1} dollars.\n", name, total );
 
-            Console.WriteLine("What is your name?");
-            name = Console.ReadLine();
-            Console.WriteLine(name + " can buy " + total + " packages of diapers.");
+            //valueOne = 40;
+            //valueTwo = 8;
+            //total = valueOne / valueTwo;
+
+            //Console.WriteLine("What is your name?");
+            //name = Console.ReadLine();
+            //Console.WriteLine(name + " can buy " + total + " packages of diapers.");
 
 
             /*valueOne = 41;
@@ -110,8 +110,22 @@ namespace PracticeProblems
             valueTwo = 5.12;
             Console.WriteLine(valueOne + valueTwo);*/
 
+            //Homework 1/23/18    Loops
 
+            int[] numbers = new int[25];
 
+            int i = 0;
+
+            for (i = 0; i < numbers.Length; i++)
+            {
+                numbers[i] = i + 1;
+                //Console.WriteLine(numbers[i]);
+            }
+            
+            for (i = 0; i <= numbers.Length; i = i + 2)
+            {
+                Console.WriteLine(numbers[i]);
+            }
         }
     }
 }
