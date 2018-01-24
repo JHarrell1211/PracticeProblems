@@ -113,6 +113,7 @@ namespace PracticeProblems
             //Homework 1/23/18    Loops
 
             int[] numbers = new int[25];
+            string pick = "";
 
             int i = 0;
 
@@ -121,11 +122,27 @@ namespace PracticeProblems
                 numbers[i] = i + 1;
                 //Console.WriteLine(numbers[i]);
             }
-            
-            for (i = 0; i <= numbers.Length; i = i + 2)
+
+            Console.WriteLine("Display even or odd numbers?" );
+            pick = Console.ReadLine().ToLower();
+
+            if (pick == "odd")
             {
-                Console.WriteLine(numbers[i]);
+
+                for (i = 0; i <= numbers.Length; i = i + 2)
+                {
+                    Console.WriteLine(numbers[i]);
+                }
             }
+            else if (pick == "even")
+            {
+                for (i = 1; i < numbers.Length; i = i + 2)
+                {
+                    Console.WriteLine(numbers[i]);
+                }
+
+            }
+
         }
     }
 }
