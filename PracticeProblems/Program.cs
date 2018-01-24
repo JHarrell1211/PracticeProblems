@@ -112,37 +112,48 @@ namespace PracticeProblems
 
             //Homework 1/23/18    Loops
 
-            int[] numbers = new int[25];
-            string pick = "";
+            //int[] numbers = new int[25];
+            //string pick = "";
 
-            int i = 0;
+            //int i = 0;
 
-            for (i = 0; i < numbers.Length; i++)
+            //for (i = 0; i < numbers.Length; i++)
+            //{
+            //    numbers[i] = i + 1;
+            //    //Console.WriteLine(numbers[i]);
+            //}
+
+            //Console.WriteLine("Display even or odd numbers?" );
+            //pick = Console.ReadLine().ToLower();
+
+            //if (pick == "odd")
+            //{
+
+            //    for (i = 0; i < numbers.Length; i = i + 2)
+            //    {
+            //        Console.WriteLine(numbers[i]);
+            //    }
+            //}
+            //else if (pick == "even")
+            //{
+            //    for (i = 1; i < numbers.Length; i = i + 2)
+            //    {
+            //        Console.WriteLine(numbers[i]);
+            //    }
+
+            //}
+
+            Console.WriteLine("How far would you like to add");
+
+            int input = int.Parse(Console.ReadLine());
+            int[] numbers = new int[input];
+            int sum = 0;
+
+            for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = i + 1;
-                //Console.WriteLine(numbers[i]);
+                sum = (sum + (i + 1));
             }
-
-            Console.WriteLine("Display even or odd numbers?" );
-            pick = Console.ReadLine().ToLower();
-
-            if (pick == "odd")
-            {
-
-                for (i = 0; i <= numbers.Length; i = i + 2)
-                {
-                    Console.WriteLine(numbers[i]);
-                }
-            }
-            else if (pick == "even")
-            {
-                for (i = 1; i < numbers.Length; i = i + 2)
-                {
-                    Console.WriteLine(numbers[i]);
-                }
-
-            }
-
+            Console.WriteLine("Total is " + sum);
         }
     }
 }
